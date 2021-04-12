@@ -11,7 +11,6 @@ export const NewsTable = ({ articles = [] }) => {
         </tr>
       </tbody>
       <tbody>
-        {console.log(articles)}
         {articles.map(({ title, author, content }, i) => {
           return (
             <tr key={i}>
@@ -25,5 +24,5 @@ export const NewsTable = ({ articles = [] }) => {
     </table>
   );
   return null;
+};
 
-}
