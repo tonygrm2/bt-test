@@ -4,7 +4,7 @@
 
 - Open your terminal and run:
 
-- `yarn` to install all the dependencies
+- `yarn` or `npm install` to install all the dependencies
 
 - `yarn start` or `npm start` to start the app
 
