@@ -16,8 +16,8 @@ export const SearchNewsForm = ({ setSearchTerm, setTermTyped, termTyped = '' }) 
 
   return (
     <form onSubmit={handleSubmit}>
-      <input type="text" className="form__input" onChange={handleChange} required autoFocus value={termTyped} placeholder="what news would you like to search ?" />
-      <button type="submit" className="form__submit">Search News</button>
+      <input type="text" className="form-input" onChange={handleChange} required autoFocus value={termTyped} />
+      <button type="submit" className="form-submit">Search News</button>
     </form>
   )
 }

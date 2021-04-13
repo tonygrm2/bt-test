@@ -1,0 +1,137 @@
+.app {
+  position: relative;
+  min-height: 100vh;
+}
+
+.news-container {
+  padding-bottom: 2.5rem;
+  margin-top: 70px;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+button {
+  text-align: center;
+  cursor: pointer;
+  color: #5514b4;
+  border-radius: 10px;
+  background-color: #e7e7e7
+}
+
+button:disabled {
+  background-color: white;
+  color: #b095d86f;
+}
+
+.bt-logo {
+  display: block;
+  margin: 0 auto;
+  width: 130px;
+  margin-bottom: 30px
+}
+
+form {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-input {
+  margin-right: 5px;
+  width: 120px;
+}
+
+.news-ul {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.news-paragraph {
+  font-size: 16px;
+}
+
+.news-li {
+  margin-bottom: 30px;
+}
+
+.news-nav {
+  text-align: center;
+}
+
+.button-nav {
+  margin-right: 2%;
+  width: 80px;
+}
+
+.footer-container {
+  padding-top: 30px;
+}
+
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  padding-top: 20px;
+  text-align: center;
+
+}
+
+.footer-table {
+  margin: 0 auto;
+  width: 45%;
+}
+
+.footer-element {
+  padding:0 10px;
+  color:#5514b4;
+}
+
+.footer-container .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer-table {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .news-paragraph {
+    font-size: 14px;
+  }
+  .news-ul {
+    width: 85%;
+  }
+
+  button,
+  .button-nav {
+    width: 78%;
+    display: block;
+    height: 30px;
+    margin: 12px auto;
+  }
+
+  .form-input {
+    width: 76%;
+    margin: 0 auto;
+    height: 25px;
+  }
+
+  .footer-table {
+    width: 100%;
+  }
+
+  .footer-element {
+    font-size: 14px;
+  }
+}
