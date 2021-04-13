@@ -1,7 +1,9 @@
-import React, { useState, useEffect } from 'react';
-import { NewsTable } from '../Components/NewsTable';
+import React, { useState, useEffect, Fragment } from 'react';
+import { NewsList } from '../Components/NewsList';
 import { SearchNewsForm } from '../Components/SearchNewsForm';
 import { NewsNavigation } from '../Components/NewsNavigation';
+import { Footer } from '../Components/Footer';
+
 import { apiBaseUrl, apiKey } from '../consts';
 
 export const NewsApp = () => {
@@ -26,14 +28,23 @@ export const NewsApp = () => {
   }, [searchTerm, page])
 
   return (
-    <div className="news__container">
-      <SearchNewsForm
-        setSearchTerm={setSearchTerm}
-        setTermTyped={setTermTyped}
-        termTyped={termTyped}
-      />
-      <NewsTable articles={articles}/>
-      <NewsNavigation page={page} setPage={setPage} totalAmountOfArticles={totalAmountOfArticles} />
-    </div>
+    <Fragment>
+      <div className="news-container">
+        <SearchNewsForm
+          setSearchTerm={setSearchTerm}
+          setTermTyped={setTermTyped}
+          termTyped={termTyped}
+        />
+        {
+          articles.length ? (
+            <Fragment>
+              <NewsList articles={articles}/>
+              <NewsNavigation page={page} setPage={setPage} totalAmountOfArticles={totalAmountOfArticles} />
+            </Fragment>
+          ) : null
+        }
+      </div>
+      <Footer />
+    </Fragment>
   )
 }

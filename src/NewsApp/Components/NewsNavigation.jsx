@@ -10,10 +10,10 @@ export const NewsNavigation = ({ page, setPage, totalAmountOfArticles }) => {
 
   return (
     <div className="news-nav">
-      <button disabled={page === 1} onClick={() => setPage(1)}>First</button>
-      <button disabled={page === lastPageIndex} onClick={() => setPage(page + 1)}>Next</button>
-      <button disabled={page === 1} onClick={() => { setPage(page - 1)}}>Previous</button>
-      <button disabled={page === lastPageIndex} onClick={() => setPage(lastPageIndex)}>Last</button>
+      <button className="button-nav" disabled={page === 1} onClick={() => setPage(1)}>First</button>
+      <button className="button-nav" disabled={page === lastPageIndex} onClick={() => setPage(page + 1)}>Next</button>
+      <button className="button-nav" disabled={page === 1} onClick={() => { setPage(page - 1)}}>Previous</button>
+      <button className="button-nav" disabled={page === lastPageIndex} onClick={() => setPage(lastPageIndex)}>Last</button>
     </div>
   );
 }
