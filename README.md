@@ -2,7 +2,7 @@
 
 - Clone the Github repo
 
-- Please make sure you are using a recent node version > 11.14.0  to do this run node -v in your terminal
+- Please make sure you are using a recent node version (>= 12.0.0)  to do this run `node -v` in your terminal
 
 - Open your terminal and run:
 
